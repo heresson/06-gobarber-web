@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTransition } from 'react-spring';
 
-import { ToastMessage, useToast } from '../../hooks/toast';
+import { ToastMessage } from '../../hooks/toast';
 
 import Toast from './Toast';
 
@@ -21,8 +21,6 @@ const ToastContainer: React.FC<ToastContainerProps> = ({ messages }) => {
       leave: { right: '-120%', opacity: 0 },
     },
   );
-
-  const { removeToast } = useToast();
 
   return (
     <Container>
